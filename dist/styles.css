@@ -1,0 +1,58 @@
+a.btn-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a[aria-expanded="false"]::before {
+    content: "\25B6";
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+a[aria-expanded="true"]::before {
+    content: "\25BC";
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+a[data-bs-toggle="collapse"] span:nth-child(2)::before {
+    content: '//';
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.col-sm.card {
+    background-color: transparent;
+}
+.col-sm.card .btn-link {
+    padding: 0;
+    vertical-align: unset;
+}
+
+
+.navbar-tables .table-descr {
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.navbar-tables .table-text {
+    text-align: right;
+}
+
+.navbar-tables .table-descr + .table-text {
+    margin-bottom: 1.5rem;
+}
+
+.navbar-tables .column-name {
+    font-size: 1.0rem;
+}
+
+.navbar-tables [class~="alert"] {
+    background-color: transparent;
+}
+
+.navbar-tables .card-body .table th:nth-child(odd) {
+    width: 20%;
+}
+
+.navbar-tables .card-body .table td:nth-child(odd) {
+    /*text-align: right;*/
+}
